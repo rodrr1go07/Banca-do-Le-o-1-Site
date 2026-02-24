@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,86 +6,99 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* BODY */
 body {
     background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* CONTAINER */
 .container {
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
 }
 
-/* Perfil */
-.profile img {
+/* PROFILE */
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
     width: 120px;
-    height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 4px solid #c40000;
-    transition: transform 0.3s ease;
-}
-
-.profile img:hover {
-    transform: scale(1.08) rotate(5deg);
 }
 
 .profile h1 {
-    color: #c40000;
-    margin-bottom: 8px;
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 5px;
 }
 
-.profile p {
-    color: #444;
-    margin-bottom: 30px;
+.slogan {
+    color: #cc0000;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-/* Links */
+/* LINKS */
 .links {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* CARD */
 .card {
     display: flex;
     align-items: center;
     gap: 15px;
     text-decoration: none;
-    background: #ffffff;
-    color: #c40000;
-    padding: 12px 18px;
-    border-radius: 40px;
-    font-weight: bold;
-    border: 2px solid #c40000;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Imagem dos tópicos */
 .card img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 28px;
 }
 
-/* Hover */
+.card span {
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* HOVER ANIMAÇÃO */
 .card:hover {
-    background: #c40000;
-    color: #ffffff;
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(196, 0, 0, 0.4);
+    background-color: #cc0000;
+    transform: translateY(-3px);
 }
 
-/* Responsivo */
-@media (max-width: 500px) {
-    .container {
-        padding: 15px;
-    }
+.card:hover span {
+    color: #ffffff;
+}
+
+.card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 13px;
+    color: #666;
 }
