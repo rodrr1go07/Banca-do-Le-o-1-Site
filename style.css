@@ -3,15 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 /* BODY */
 body {
-    background-color: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
 }
 
 /* CONTAINER */
@@ -21,41 +20,43 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
 /* PROFILE */
 .profile {
     text-align: center;
-    margin-top: 20px;
+    animation: fadeDown 0.8s ease;
 }
 
 .logo {
-    width: 120px;
+    width: 130px;
     border-radius: 50%;
     margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .profile h1 {
-    font-size: 26px;
+    font-size: 28px;
     color: #000;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .slogan {
     color: #cc0000;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 /* LINKS */
 .links {
     width: 100%;
-    max-width: 400px;
-    margin-top: 40px;
+    max-width: 420px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
 
 /* CARD */
@@ -64,31 +65,35 @@ body {
     align-items: center;
     gap: 15px;
     text-decoration: none;
-    background-color: #f5f5f5;
-    padding: 15px 20px;
-    border-radius: 12px;
-    transition: 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 16px 22px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(5px);
 }
 
 .card img {
     width: 28px;
+    transition: 0.3s;
 }
 
 .card span {
     color: #000;
     font-weight: 600;
     font-size: 15px;
+    transition: 0.3s;
 }
 
-/* HOVER ANIMAÇÃO */
+/* HOVER */
 .card:hover {
     background-color: #cc0000;
-    transform: translateY(-3px);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.3);
 }
 
 .card:hover span {
-    color: #ffffff;
+    color: #fff;
 }
 
 .card:hover img {
@@ -97,8 +102,31 @@ body {
 
 /* FOOTER */
 footer {
+    margin-top: 40px;
     text-align: center;
-    padding: 25px 0;
     font-size: 13px;
-    color: #666;
+    color: #777;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+    .profile h1 {
+        font-size: 22px;
+    }
+
+    .card span {
+        font-size: 14px;
+    }
 }
