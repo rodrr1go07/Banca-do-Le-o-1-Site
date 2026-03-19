@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* BODY */
+
 body {
     background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
     min-height: 100vh;
     display: flex;
 }
 
-/* CONTAINER */
+
 .container {
     flex: 1;
     display: flex;
@@ -23,7 +23,7 @@ body {
     padding: 40px 20px;
 }
 
-/* PROFILE */
+
 .profile {
     text-align: center;
     animation: fadeDown 0.8s ease;
@@ -49,7 +49,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* LINKS */
+
 .links {
     width: 100%;
     max-width: 420px;
@@ -59,7 +59,7 @@ body {
     gap: 18px;
 }
 
-/* CARD */
+
 .card {
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ body {
     transition: 0.3s;
 }
 
-/* HOVER */
+
 .card:hover {
     background-color: #cc0000;
     transform: translateY(-5px) scale(1.02);
@@ -100,7 +100,6 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* FOOTER */
 footer {
     margin-top: 40px;
     text-align: center;
@@ -108,7 +107,7 @@ footer {
     color: #777;
 }
 
-/* ANIMAÇÃO */
+
 @keyframes fadeDown {
     from {
         opacity: 0;
@@ -120,7 +119,7 @@ footer {
     }
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 480px) {
     .profile h1 {
         font-size: 22px;
@@ -129,4 +128,67 @@ footer {
     .card span {
         font-size: 14px;
     }
+}
+
+/* ===== CARDÁPIO ===== */
+
+.menu {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.menu-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.menu-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.menu-card p {
+    font-size: 13px;
+    color: #666;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.2);
+}
+
+/* Botão Voltar */
+
+.btn-voltar {
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #cc0000;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #990000;
+    transform: scale(1.05);
 }
