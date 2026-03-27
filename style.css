@@ -192,3 +192,30 @@ footer {
     background-color: #990000;
     transform: scale(1.05);
 }
+.card {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.logo {
+    border: 3px solid #cc0000;
+}
+
+/* Animação suave nos links */
+.card {
+    transition: all 0.25s ease-in-out;
+}
+
+/* Sombra mais elegante */
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Botão voltar mais moderno */
+.btn-voltar {
+    box-shadow: 0 5px 15px rgba(204,0,0,0.3);
+}
