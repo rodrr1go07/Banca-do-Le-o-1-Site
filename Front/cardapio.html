@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banca do Leão - Produtos</title>
+
+<style>
+:root {
+    --primary-red: #cc0000;
+    --bg-light: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--bg-light);
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info h1 {
+    color: var(--text-main);
+}
+
+.info p {
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+.filtros-cardapio {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filtros-cardapio select,
+.filtros-cardapio input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* seção */
+.categoria-bloco {
+    margin-bottom: 40px;
+}
+
+.categoria-titulo {
+    font-size: 1.6rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+/* grid */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.menu-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.menu-info h3 {
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.menu-info strong {
+    color: var(--primary-red);
+}
+
+.menu-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-cardapio {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="topo">
+    <img src="logotipo.jpg" class="logo">
+    <div class="info">
+        <h1>Banca do Leão</h1>
+        <p>Produtos disponíveis • Atendimento presencial</p>
+    </div>
+</div>
+
+<div class="filtros-cardapio">
+    <select id="categoria">
+        <option value="todos">Lista de categorias</option>
+        <option value="suinos">Suínos</option>
+        <option value="bovinos">Bovinos</option>
+        <option value="ovinos">Ovinos</option>
+        <option value="outros">Outros</option>
+
+    </select>
+
+    <input type="text" id="busca" placeholder="Buscar produto">
+</div>
+
+<!-- SUÍNOS -->
+<div class="categoria-bloco">
+<h2 class="categoria-titulo">Suínos</h2>
+<div class="menu">
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Ingredientes p/ Feijoada</h3><strong>R$ 17,00</strong></div><img src="ingrediente.png"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Picado de Porco</h3><strong>R$ 19,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Pernil</h3><strong>R$ 21,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Copa Lombo</h3><strong>R$ 21,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Toucinho</h3><strong>R$ 22,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Costela de Porco c/ Toucinho</h3><strong>R$ 24,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Lombo de Porco</h3><strong>R$ 24,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Panceta (Barriga do Porco)</h3><strong>R$ 24,00</strong></div><img src="panceta.jpg"></div>
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Porco Temperado</h3><strong>R$ 25,00</strong></div><img src="img/x-fominha.jpg"></div>
+
+<div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Costela de Porco s/ Toucinho</h3><strong>R$ 26,00</strong></div><img src="img/x-fominha.jpg"></div>
+
+
+</div>
+</div>
+
+<!-- BOVINOS -->
+<div class="categoria-bloco">
+<h2 class="categoria-titulo">Bovinos</h2>
+<div class="menu">
+
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Língua</h3><strong>R$ 22,00</strong></div><img src="lingua.png"></div>
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Linguíça de Carne de Sol c/ Queijo</h3><strong>R$ 27,00</strong></div><img src="linguca.png"></div>
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Maçã da Língua</h3><strong>R$ 30,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Capa de Filé</h3><strong>R$ 40,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Chã de Fora</h3><strong>R$ 44,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Coxão Mole</h3><strong>R$ 46,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Coxão Mole de Sol</h3><strong>R$ 46,00</strong></div><img src="img/x-fominha.jpg"></div>
+
+</div>
+</div>
+
+<!-- OVINOS -->
+<div class="categoria-bloco">
+<h2 class="categoria-titulo">Ovinos</h2>
+<div class="menu">
+<div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Picado de Carneiro</h3><strong>R$ 26,00</strong></div><img src="picadoc.png"></div>
+<div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Buchada</h3><strong>R$ 36,00</strong></div><img src="buchada.png"></div>
+<div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Carneiro Dianteiro</h3><strong>R$ 38,00</strong></div><img src="img/x-fominha.jpg"></div>
+<div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Carneiro Traseiro</h3><strong>R$ 40,00</strong></div><img src="traseiro.png"></div>
+
+
+</div>
+</div>
+<!-- outros produtos -->
+ <div class="categoria-bloco">
+<h2 class="categoria-titulo">Outros</h2>
+<div class="menu-card" data-categoria="outros"><div class="menu-info"><h3>Manteiga da Terra</h3><strong>R$ 11,00</strong></div><img src="manteiga.png"></div>
+<div class="menu-card" data-categoria="outros"><div class="menu-info"><h3>Galinha da Pequena</h3><strong>R$ 13,00</strong></div><img src="galinha.png"></div>
+<div class="menu-card" data-categoria="outros"><div class="menu-info"><h3>Codorna</h3><strong>R$ 25,00</strong></div><img src="codorna.png"></div>
+
+
+</div>
+
+<script>
+const busca = document.getElementById("busca");
+const categoria = document.getElementById("categoria");
+const cards = document.querySelectorAll(".menu-card");
+
+function filtrarProdutos() {
+    const texto = busca.value.toLowerCase();
+    const categoriaSelecionada = categoria.value;
+
+    cards.forEach(card => {
+        const nome = card.querySelector("h3").textContent.toLowerCase();
+        const categoriaCard = card.dataset.categoria;
+
+        const combinaBusca = nome.includes(texto);
+        const combinaCategoria =
+            categoriaSelecionada === "todos" ||
+            categoriaSelecionada === categoriaCard;
+
+        card.style.display = (combinaBusca && combinaCategoria)
+            ? "flex"
+            : "none";
+    });
+}
+
+busca.addEventListener("input", filtrarProdutos);
+categoria.addEventListener("change", filtrarProdutos);
+</script>
+<footer>
+        <p>© 2026 Banca do Leão - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
