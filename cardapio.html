@@ -33,6 +33,30 @@ body {
     margin: auto;
 }
 
+/* BOTÃO VOLTAR */
+.area-botao {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background: #b30000;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: #990000;
+    transform: translateY(-2px);
+}
+
 .topo {
     display: flex;
     align-items: center;
@@ -70,7 +94,6 @@ body {
     border: 1px solid #ddd;
 }
 
-/* seção */
 .categoria-bloco {
     margin-bottom: 40px;
 }
@@ -81,7 +104,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* grid */
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,6 +142,14 @@ body {
     object-fit: cover;
 }
 
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    margin-top: 40px;
+}
+
 @media (max-width: 768px) {
     .menu {
         grid-template-columns: 1fr;
@@ -134,6 +164,8 @@ body {
 <body>
 
 <div class="container">
+
+
 
 <div class="topo">
     <img src="logotipo.jpg" class="logo">
@@ -150,7 +182,6 @@ body {
         <option value="bovinos">Bovinos</option>
         <option value="ovinos">Ovinos</option>
         <option value="outros">Outros</option>
-
     </select>
 
     <input type="text" id="busca" placeholder="Buscar produto">
@@ -169,10 +200,7 @@ body {
 <div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Lombo de Porco</h3><strong>R$ 24,00</strong></div><img src="img/x-fominha.jpg"></div>
 <div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Panceta (Barriga do Porco)</h3><strong>R$ 24,00</strong></div><img src="panceta.jpg"></div>
 <div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Porco Temperado</h3><strong>R$ 25,00</strong></div><img src="img/x-fominha.jpg"></div>
-
 <div class="menu-card" data-categoria="suinos"><div class="menu-info"><h3>Costela de Porco s/ Toucinho</h3><strong>R$ 26,00</strong></div><img src="img/x-fominha.jpg"></div>
-
-
 </div>
 </div>
 
@@ -180,7 +208,6 @@ body {
 <div class="categoria-bloco">
 <h2 class="categoria-titulo">Bovinos</h2>
 <div class="menu">
-
 <div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Língua</h3><strong>R$ 22,00</strong></div><img src="lingua.png"></div>
 <div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Linguíça de Carne de Sol c/ Queijo</h3><strong>R$ 27,00</strong></div><img src="linguca.png"></div>
 <div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Maçã da Língua</h3><strong>R$ 30,00</strong></div><img src="img/x-fominha.jpg"></div>
@@ -188,7 +215,6 @@ body {
 <div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Chã de Fora</h3><strong>R$ 44,00</strong></div><img src="img/x-fominha.jpg"></div>
 <div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Coxão Mole</h3><strong>R$ 46,00</strong></div><img src="img/x-fominha.jpg"></div>
 <div class="menu-card" data-categoria="bovinos"><div class="menu-info"><h3>Coxão Mole de Sol</h3><strong>R$ 46,00</strong></div><img src="img/x-fominha.jpg"></div>
-
 </div>
 </div>
 
@@ -199,20 +225,28 @@ body {
 <div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Picado de Carneiro</h3><strong>R$ 26,00</strong></div><img src="picadoc.png"></div>
 <div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Buchada</h3><strong>R$ 36,00</strong></div><img src="buchada.png"></div>
 <div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Carneiro Dianteiro</h3><strong>R$ 38,00</strong></div><img src="img/x-fominha.jpg"></div>
-<div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Carneiro Traseiro</h3><strong>R$ 40,00</strong></div><img src="traseiro.png"></div>
-
-
+<div class="menu-card" data-categoria="ovinos"><div class="menu-info"><h3>Carneiro Traseiro</h3><strong>R$ 40,00</strong></div><img src=".png"></div>
 </div>
 </div>
-<!-- outros produtos -->
- <div class="categoria-bloco">
+
+<!-- OUTROS -->
+<div class="categoria-bloco">
 <h2 class="categoria-titulo">Outros</h2>
+<div class="menu">
 <div class="menu-card" data-categoria="outros"><div class="menu-info"><h3>Manteiga da Terra</h3><strong>R$ 11,00</strong></div><img src="manteiga.png"></div>
 <div class="menu-card" data-categoria="outros"><div class="menu-info"><h3>Galinha da Pequena</h3><strong>R$ 13,00</strong></div><img src="galinha.png"></div>
 <div class="menu-card" data-categoria="outros"><div class="menu-info"><h3>Codorna</h3><strong>R$ 25,00</strong></div><img src="codorna.png"></div>
-
+</div>
+</div>
 
 </div>
+<!-- BOTÃO VOLTAR -->
+<div class="area-botao">
+    <a href="index.html" class="btn-voltar">← Voltar para Página Inicial</a>
+</div>
+<footer>
+    <p>© 2026 Banca do Leão - Todos os direitos reservados</p>
+</footer>
 
 <script>
 const busca = document.getElementById("busca");
@@ -241,8 +275,6 @@ function filtrarProdutos() {
 busca.addEventListener("input", filtrarProdutos);
 categoria.addEventListener("change", filtrarProdutos);
 </script>
-<footer>
-        <p>© 2026 Banca do Leão - Todos os direitos reservados</p>
-    </footer>
+
 </body>
 </html>
