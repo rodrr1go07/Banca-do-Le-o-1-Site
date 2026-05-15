@@ -4,10 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin | Banca do Leão</title>
+<script>
+    if (localStorage.getItem("siteTheme") === "dark") {
+        document.documentElement.classList.add("dark-theme");
+    }
+</script>
 <link rel="stylesheet" href="../style/admin.css">
 <link rel="icon" href="../img/logotipo.jpg">
 </head>
 <body>
+
+<button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Modo escuro</button>
 
 <main class="admin-shell">
     <section id="loginPanel" class="login-panel">
@@ -43,5 +50,6 @@
 </main>
 
 <script src="../scripts/admin.js"></script>
+<script src="../scripts/theme.js"></script>
 </body>
 </html>

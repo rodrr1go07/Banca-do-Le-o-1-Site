@@ -4,10 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Banca do Leão - Produtos</title>
+<script>
+    if (localStorage.getItem("siteTheme") === "dark") {
+        document.documentElement.classList.add("dark-theme");
+    }
+</script>
 <link rel="stylesheet" href="../style/cardapio.css">
 <link rel="icon" href="../img/logotipo.jpg">
 </head>
 <body>
+
+<button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Modo escuro</button>
 
 <div class="container">
     <div class="topo">
@@ -44,5 +51,6 @@
 </footer>
 
 <script src="../scripts/cardapio.js"></script>
+<script src="../scripts/theme.js"></script>
 </body>
 </html>

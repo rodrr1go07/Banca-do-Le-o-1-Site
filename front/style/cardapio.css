@@ -8,6 +8,15 @@
     --shadow-md: 0 8px 20px rgba(0,0,0,0.08);
 }
 
+:root.dark-theme {
+    --bg-light: #101010;
+    --text-main: #f8fafc;
+    --text-muted: #d1d5db;
+    --white: #181818;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.35);
+    --shadow-md: 0 8px 20px rgba(0,0,0,0.45);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +26,34 @@
 
 body {
     background: var(--bg-light);
-    padding: 30px;
+    padding: 78px 30px 30px;
+    color: var(--text-main);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 10;
+    border: 0;
+    background: var(--white);
+    color: var(--text-main);
+    padding: 9px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+}
+
+:root.dark-theme .theme-toggle {
+    background: #000000;
+    color: #ffffff;
 }
 
 .container {
@@ -84,6 +120,13 @@ body {
     padding: 12px;
     border-radius: 10px;
     border: 1px solid #ddd;
+    background: var(--white);
+    color: var(--text-main);
+}
+
+:root.dark-theme .filtros-cardapio select,
+:root.dark-theme .filtros-cardapio input {
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
 .categoria-bloco {
@@ -143,12 +186,20 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 78px 18px 30px;
+    }
+
     .menu {
         grid-template-columns: 1fr;
     }
 
     .filtros-cardapio {
         flex-direction: column;
+    }
+
+    .topo {
+        align-items: flex-start;
     }
 }
 
