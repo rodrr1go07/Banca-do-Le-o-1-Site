@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ingredientes-feijoada",
+    "name": "Ingredientes p/ Feijoada",
+    "price": 17,
+    "category": "suinos",
+    "image": "../img/ingrediente.png"
+  },
+  {
+    "id": "picado-porco",
+    "name": "Picado de Porco",
+    "price": 19,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "pernil",
+    "name": "Pernil",
+    "price": 21,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "copa-lombo",
+    "name": "Copa Lombo",
+    "price": 21,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "toucinho",
+    "name": "Toucinho",
+    "price": 22,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "costela-porco-com-toucinho",
+    "name": "Costela de Porco c/ Toucinho",
+    "price": 24,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "lombo-porco",
+    "name": "Lombo de Porco",
+    "price": 24,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "panceta",
+    "name": "Panceta (Barriga do Porco)",
+    "price": 24,
+    "category": "suinos",
+    "image": "../img/panceta.png"
+  },
+  {
+    "id": "porco-temperado",
+    "name": "Porco Temperado",
+    "price": 25,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "costela-porco-sem-toucinho",
+    "name": "Costela de Porco s/ Toucinho",
+    "price": 26,
+    "category": "suinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "lingua",
+    "name": "Língua",
+    "price": 22,
+    "category": "bovinos",
+    "image": "../img/lingua.png"
+  },
+  {
+    "id": "linguica-carne-sol-queijo",
+    "name": "Linguíça de Carne de Sol c/ Queijo",
+    "price": 30,
+    "category": "bovinos",
+    "image": "../img/linguca.png"
+  },
+  {
+    "id": "maca-lingua",
+    "name": "Maçã da Língua",
+    "price": 30,
+    "category": "bovinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "capa-file",
+    "name": "Capa de Filé",
+    "price": 40,
+    "category": "bovinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "cha-fora",
+    "name": "Chã de Fora",
+    "price": 44,
+    "category": "bovinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "coxao-mole",
+    "name": "Coxão Mole",
+    "price": 46,
+    "category": "bovinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "coxao-mole-sol",
+    "name": "Coxão Mole de Sol",
+    "price": 46,
+    "category": "bovinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "picado-carneiro",
+    "name": "Picado de Carneiro",
+    "price": 26,
+    "category": "ovinos",
+    "image": "../img/picadoc.png"
+  },
+  {
+    "id": "buchada",
+    "name": "Buchada",
+    "price": 36,
+    "category": "ovinos",
+    "image": "../img/buchada.png"
+  },
+  {
+    "id": "carneiro-dianteiro",
+    "name": "Carneiro Dianteiro",
+    "price": 38,
+    "category": "ovinos",
+    "image": "../img/logotipo.jpg"
+  },
+  {
+    "id": "carneiro-traseiro",
+    "name": "Carneiro Traseiro",
+    "price": 40,
+    "category": "ovinos",
+    "image": "../img/traseiro.png"
+  },
+  {
+    "id": "manteiga-terra",
+    "name": "Manteiga da Terra",
+    "price": 11,
+    "category": "outros",
+    "image": "../img/manteiga.png"
+  },
+  {
+    "id": "galinha-pequena",
+    "name": "Galinha da Pequena",
+    "price": 13,
+    "category": "outros",
+    "image": "../img/galinha.png"
+  },
+  {
+    "id": "codorna",
+    "name": "Codorna",
+    "price": 25,
+    "category": "outros",
+    "image": "../img/codorna.png"
+  }
+]
