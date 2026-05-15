@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banca do Leão - Produtos</title>
+<link rel="stylesheet" href="../style/cardapio.css">
+<link rel="icon" href="../img/logotipo.jpg">
+</head>
+<body>
+
+<div class="container">
+    <div class="topo">
+        <a href="index.html">
+            <img src="../img/logotipo.jpg" alt="Logo Banca do Leão" class="logo">
+        </a>
+        <div class="info">
+            <h1>Banca do Leão</h1>
+            <p>Produtos disponíveis • Atendimento presencial</p>
+        </div>
+    </div>
+
+    <div class="filtros-cardapio">
+        <select id="categoria">
+            <option value="todos">Lista de categorias</option>
+            <option value="suinos">Suínos</option>
+            <option value="bovinos">Bovinos</option>
+            <option value="ovinos">Ovinos</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <input type="text" id="busca" placeholder="Buscar produto">
+    </div>
+
+    <div id="cardapio"></div>
+</div>
+
+<div class="area-botao">
+    <a href="index.html" class="btn-voltar">← Voltar para Página Inicial</a>
+</div>
+
+<footer>
+    <p>© 2026 Banca do Leão - Todos os direitos reservados</p>
+</footer>
+
+<script src="../scripts/cardapio.js"></script>
+</body>
+</html>
